@@ -1,0 +1,34 @@
+Script started on 2026-02-07 23:40:11-04:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="280" LINES="70"]
+ethan@EthanDesktop:~$ ./copyPrompt.shvi copyPrompt.sh./copyPrompt.sh 
+:wqError! The source directory is invalid!
+ethan@EthanDesktop:~$ ./copyPrompt.sh testDir.dir non  Exsist         testDir2.dir
+Destination directory doesnt exist! Would you like to create it?n
+ethan@EthanDesktop:~$ ./copyPrompt.sh testDir.dir testDir2.dir
+Destination directory doesnt exist! Would you like to create it?y
+test1
+Copy this file?y
+test2
+Copy this file?n
+test3
+Copy this file?y
+test4
+Copy this file?y
+test5
+Copy this file?y
+ethan@EthanDesktop:~$ ls -l testDir2.dir
+total 0
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:41 test1
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:41 test3
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:41 test4
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:41 test5
+ethan@EthanDesktop:~$ ls -l testDir.dir
+total 0
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:31 test1
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:31 test2
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:31 test3
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:31 test4
+-rw-r--r-- 1 ethan ethan 0 Feb  7 23:31 test5
+ethan@EthanDesktop:~$ exit
+exit
+
+Script done on 2026-02-07 23:42:22-04:00 [COMMAND_EXIT_CODE="0"]
